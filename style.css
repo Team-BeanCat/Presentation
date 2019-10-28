@@ -1,0 +1,97 @@
+
+body {
+    background: #443737;
+    color: #fff;
+}
+
+div#home {
+    display: contents;
+    font-size: 30px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    font-family: 'font', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+
+    text-align:center;
+    top: 50%;
+    left: 50%;
+}
+
+video#introVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index:0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+div#overlay {
+    position:absolute;
+    z-index:1;
+    align-self: center;
+}
+
+div.slide-right {
+  width: 100%;
+  overflow: hidden;
+}
+
+button.link {
+    color: #fff;
+    font-size: 20px;
+    background:none;
+    border:none;
+    text-align: left;
+}
+
+div.slide-right p {
+  animation: 2s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+button:hover, button  :active {
+    background-color: #fff;
+    color: #000;
+}
+
+@keyframes div {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+@font-face {
+    font-family: "font";
+    src: url("font.woff2") format("woff");
+}
