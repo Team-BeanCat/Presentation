@@ -1,8 +1,13 @@
 /*  I do not remember where I found this, it is a collection of a lot of css projects combines into one file  */
 
-:root {
+/*
   --background-from: #29bae4;
   --backgrounf-to: #ee76ad;
+*/
+
+:root {
+  --background-from: #0a55f7;
+  --backgrounf-to: #76eee8;
 
   --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
