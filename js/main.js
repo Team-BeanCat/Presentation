@@ -96,7 +96,6 @@
 	  console.log('show');
 	});
 
-	// scroll
 	var scrollWindow = function() {
 		$(window).scroll(function(){
 			var $w = $(this),
@@ -192,7 +191,6 @@
 			.find('li')
 			.removeClass('has-dropdown');
 
-		// Hover dropdown menu on mobile
 		$('.offcanvas-has-dropdown').mouseenter(function(){
 			var $this = $(this);
 
@@ -304,7 +302,6 @@
 	contentWayPoint();
 
 
-	// navigation
 	var OnePageNav = function() {
 		$(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
 		 	e.preventDefault();
@@ -329,12 +326,6 @@
 	OnePageNav();
 
 
-
-
-
-
-
-	// TYPEWRITE
 	var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -385,15 +376,10 @@
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
-        // INJECT CSS
+
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-	
-
-
-
 })(jQuery);
-
